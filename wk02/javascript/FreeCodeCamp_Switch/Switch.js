@@ -1,14 +1,14 @@
-# Switch (4ข้อ)
-# Prerequisite
-- function
-# Content
-- Selecting from Many Options with Switch Statements
-- Adding a Default Option in Switch Statements
-- Multiple Identical Options in Switch Statements
-- Replacing If Else Chains with Switch
+// # Switch (4ข้อ)
+// # Prerequisite
+// - function
+// # Content
+// - Selecting from Many Options with Switch Statements
+// - Adding a Default Option in Switch Statements
+// - Multiple Identical Options in Switch Statements
+// - Replacing If Else Chains with Switch
 
 
-[1.Selecting from Many Options with Switch Statements]
+// [1.Selecting from Many Options with Switch Statements]
 
 function caseInSwitch(val) {
   var answer = "";
@@ -32,8 +32,8 @@ function caseInSwitch(val) {
 }
 
 caseInSwitch(1);
-```
-[2.Adding a Default Option in Switch Statements]
+
+// [2.Adding a Default Option in Switch Statements]
 
 function switchOfStuff(val) {
   var answer = "";
@@ -57,9 +57,9 @@ function switchOfStuff(val) {
 };
 
 switchOfStuff(1);
-```
 
-[3.Multiple Identical Options in Switch Statements]
+
+// [3.Multiple Identical Options in Switch Statements]
 
 function sequentialSizes(val) {
   var answer = "";
@@ -87,9 +87,9 @@ function sequentialSizes(val) {
 }
 
 sequentialSizes(1);
-```
 
-[4.Replacing If Else Chains with Switch]
+
+// [4.Replacing If Else Chains with Switch]
 
 function chainToSwitch(val) {
   var answer = "";
@@ -115,4 +115,3 @@ function chainToSwitch(val) {
 };
 
 chainToSwitch(7);
-```

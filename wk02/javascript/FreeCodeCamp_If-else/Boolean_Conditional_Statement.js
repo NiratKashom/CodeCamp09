@@ -1,8 +1,8 @@
-# Boolean & Conditional Statement (18ข้อ)
+// # Boolean & Conditional Statement (18ข้อ)
 
-# การเปรียบเทียบ 
+// # การเปรียบเทียบ 
 
-[1.Understanding Boolean Values]
+// [1.Understanding Boolean Values]
 
 function welcomeToBooleans() {
 
@@ -12,8 +12,8 @@ function welcomeToBooleans() {
 
   // Only change code above this line
 }
-```
-[2.Use Conditional Logic with If Statements]
+
+// [2.Use Conditional Logic with If Statements]
 
 function trueOrFalse(wasThatTrue) {
   // Only change code below this line
@@ -23,10 +23,10 @@ function trueOrFalse(wasThatTrue) {
   return 'No, that was false';
   // Only change code above this line
 }
-```
 
-## เครื่องหมาย 'เท่ากับ'
-[1.Comparison with the Equality Operator]
+
+// ## เครื่องหมาย 'เท่ากับ'
+// [1.Comparison with the Equality Operator]
 
 // Setup
 function testEqual(val) {
@@ -36,9 +36,9 @@ function testEqual(val) {
   return "Not Equal";
 }
 testEqual(10);
-```
 
-[2.Comparison with the Strict Equality Operator]
+
+// [2.Comparison with the Strict Equality Operator]
 
 // Setup
 function testStrict(val) {
@@ -49,9 +49,9 @@ function testStrict(val) {
 }
 
 testStrict(10);
-```
 
-[3.Practice comparing different values]
+
+// [3.Practice comparing different values]
 
 // Setup
 function compareEquality(a, b) {
@@ -62,10 +62,10 @@ function compareEquality(a, b) {
 }
 
 compareEquality(10, "10");
-```
 
-## เครื่องหมาย 'ไม่เท่ากับ'
-[4.Comparison with the Inequality Operator]
+
+// ## เครื่องหมาย 'ไม่เท่ากับ'
+// [4.Comparison with the Inequality Operator]
 
 // Setup
 function testNotEqual(val) {
@@ -76,9 +76,9 @@ function testNotEqual(val) {
 }
 
 testNotEqual(10);
-```
 
-[5.Comparison with the Strict Inequality Operator]
+
+// [5.Comparison with the Strict Inequality Operator]
 
 // Setup
 function testStrictNotEqual(val) {
@@ -89,11 +89,11 @@ function testStrictNotEqual(val) {
 }
 
 testStrictNotEqual(10);
-```
 
-## มากกว่า,มากกว่าหรือเท่ากับ,น้อยกว่า,น้อยกว่าหรือเท่ากับ
 
-[6.Comparison with the Greater Than Operator]
+// ## มากกว่า,มากกว่าหรือเท่ากับ,น้อยกว่า,น้อยกว่าหรือเท่ากับ
+
+// [6.Comparison with the Greater Than Operator]
 
 function testGreaterThan(val) {
   if (val > 100) {  // Change this line
@@ -108,9 +108,9 @@ function testGreaterThan(val) {
 }
 
 testGreaterThan(10);
-```
 
-[7.Comparison with the Greater Than Or Equal Operator]
+
+// [7.Comparison with the Greater Than Or Equal Operator]
 function testLessThan(val) {
   if (val < 25) {  // Change this line
     return "Under 25";
@@ -124,9 +124,9 @@ function testLessThan(val) {
 }
 
 testLessThan(10);
-```
 
-[8.Comparison with the Less Than Operator]
+
+// [8.Comparison with the Less Than Operator]
 
 function testLessOrEqual(val) {
   if (val <= 12) {  // Change this line
@@ -141,9 +141,9 @@ function testLessOrEqual(val) {
 }
 
 testLessOrEqual(10);
-```
 
-[9.Comparison with the Less Than Or Equal To Operator]
+
+// [9.Comparison with the Less Than Or Equal To Operator]
 
 function testLogicalAnd(val) {
   // Only change code below this line
@@ -157,10 +157,10 @@ function testLogicalAnd(val) {
 }
 
 testLogicalAnd(10);
-```
 
-## And และ Or
-[10.Comparisons with the Logical And Operator]
+
+// ## And และ Or
+// [10.Comparisons with the Logical And Operator]
 
 function testLogicalOr(val) {
   // Only change code below this line
@@ -174,9 +174,9 @@ function testLogicalOr(val) {
 }
 
 testLogicalOr(15);
-```
 
-[11.Comparisons with the Logical Or Operator]
+
+// [11.Comparisons with the Logical Or Operator]
 
 function testElse(val) {
   var result = "";
@@ -193,11 +193,11 @@ function testElse(val) {
 }
 
 testElse(4);
-```
 
-# Else,Else if
 
-[1.Introducing Else Statements]
+// # Else,Else if
+
+// [1.Introducing Else Statements]
 
 function testElseIf(val) {
   if (val > 10) {
@@ -209,9 +209,9 @@ function testElseIf(val) {
   }  
 }
 testElseIf(7);
-```
 
-[3.Logical Order in If Else Statements]
+
+// [3.Logical Order in If Else Statements]
 
 function orderMyLogic(val) {
   if (val < 5) {
@@ -225,9 +225,9 @@ function orderMyLogic(val) {
 
 orderMyLogic(4);
 console.log(orderMyLogic(4))
-```
 
-[4.Chaining If Else Statements]
+
+// [4.Chaining If Else Statements]
 
 function testSize(num) {
   // Only change code below this line
@@ -248,10 +248,10 @@ function testSize(num) {
 }
 
 testSize(7);
-```
 
-# Application
-[1.Golf Code]
+
+// # Application
+// [1.Golf Code]
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, strokes) {
   // Only change code below this line
@@ -274,4 +274,3 @@ function golfScore(par, strokes) {
 }
 
 golfScore(5, 4);
-```

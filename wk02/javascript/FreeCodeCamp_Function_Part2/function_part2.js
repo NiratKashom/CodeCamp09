@@ -1,15 +1,15 @@
-# Function
-# Prerequisite
-- basic functions
-- if else 
+// # Function
+// # Prerequisite
+// - basic functions
+// - if else 
 
-# Content
-- Returning Boolean Values from Functions
-- Return Early Pattern for Functions
-- Counting Cards
+// # Content
+// - Returning Boolean Values from Functions
+// - Return Early Pattern for Functions
+// - Counting Cards
 
 
-[1.Returning Boolean Values from Functions]
+// [1.Returning Boolean Values from Functions]
 
 function isLess(a, b) {
   // Only change code below this line
@@ -18,9 +18,9 @@ function isLess(a, b) {
 }
 
 isLess(10, 15);
-```
 
-[2.Return Early Pattern for Functions]
+
+// [2.Return Early Pattern for Functions]
 
 // Setup
 function abTest(a, b) {
@@ -37,10 +37,9 @@ if (a < 0 || b < 0) {
 
 abTest(2,2);
 console.log(abTest(2,2))
-```
 
-# Application
-[1.Counting Cards]
+// # Application
+// [1.Counting Cards]
 
 var count = 0;
 
@@ -72,4 +71,3 @@ function cc(card) {
 
 // console.log(cc(2));
 cc(2); cc(3); cc(7); cc('K'); cc('A');
-```

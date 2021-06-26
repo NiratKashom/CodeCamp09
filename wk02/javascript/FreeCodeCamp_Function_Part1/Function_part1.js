@@ -1,34 +1,34 @@
-# Function (9ข้อ)
+// # Function (9ข้อ)
 
-- Write Reusable JavaScript with Functions
-- Passing Values to Functions with Arguments
-- Global Scope and Functions
-- Local Scope and Functions
-- Global vs. Local Scope in Functions
-- Return a Value from a Function with Return
-- Understanding Undefined Value returned from a Function
-- Assignment with a Returned Value
-- Stand in Line
+// - Write Reusable JavaScript with Functions
+// - Passing Values to Functions with Arguments
+// - Global Scope and Functions
+// - Local Scope and Functions
+// - Global vs. Local Scope in Functions
+// - Return a Value from a Function with Return
+// - Understanding Undefined Value returned from a Function
+// - Assignment with a Returned Value
+// - Stand in Line
 
-# Basic
-[1.Write Reusable JavaScript with Functions]
+// # Basic
+// [1.Write Reusable JavaScript with Functions]
 
 function reusableFunction() {
   console.log('Hi World');
 };
 
 reusableFunction();
-```
-[2.Passing Values to Functions with Arguments]
+
+// [2.Passing Values to Functions with Arguments]
 
 function functionWithArgs(num1, num2) {
   console.log(num1 + num2);
 }
  functionWithArgs(2, 2);
-```
 
-# Scope
-[1.Global Scope and FunctionsPassed]
+
+// # Scope
+// [1.Global Scope and FunctionsPassed]
 
 // Declare the myGlobal variable below this line
 var myGlobal = 10;
@@ -50,9 +50,9 @@ function fun2() {
   }
   console.log(output);
 }
-```
 
-[2.Local Scope and FunctionsPassed]
+
+// [2.Local Scope and FunctionsPassed]
 
 function myLocalScope() {
 
@@ -65,9 +65,9 @@ myLocalScope();
 // Run and check the console
 // myVar is not defined outside of myLocalScope
 console.log('outside myLocalScope', myVar);
-```
 
-[3.Global vs. Local Scope in FunctionsPassed]
+
+// [3.Global vs. Local Scope in FunctionsPassed]
 
 // Setup
 var outerWear = "T-Shirt";
@@ -82,17 +82,17 @@ function myOutfit() {
 }
 
 myOutfit();
-```
 
-# Return
-[1.Return a Value from a Function with Return]
+
+// # Return
+// [1.Return a Value from a Function with Return]
 
 function timesFive(num) {
   return num * 5;
 };
-```
 
-[2.Understanding Undefined Value returned from a FunctionPassed]
+
+// [2.Understanding Undefined Value returned from a FunctionPassed]
 
 // Setup
 var sum = 0;
@@ -110,9 +110,9 @@ function addFive() {
 
 addThree();
 addFive();
-```
 
-[3.Assignment with a Returned Value]
+
+// [3.Assignment with a Returned Value]
 
 // Setup
 var processed = 0;
@@ -123,10 +123,10 @@ function processArg(num) {
 
 // Only change code below this line
 processed = processArg(7);
-```
 
-# Application 
-[1.Stand in Line]
+
+// # Application 
+// [1.Stand in Line]
 
 function nextInLine(arr, item) {
   // Only change code below this line
@@ -143,4 +143,3 @@ var testArr = [1,2,3,4,5];
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
-```

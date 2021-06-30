@@ -5,3 +5,7 @@ wk01
     - use position
   js
     - exercise freecodecamp javascript
+
+wk02
+  js
+    

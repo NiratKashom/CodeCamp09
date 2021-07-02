@@ -1,6 +1,6 @@
 wk01
   css
-    - clone loginFB page
+
     - landing page
     - use position
   js
@@ -8,4 +8,9 @@ wk01
 
 wk02
   js
-    
+    - exercise freecodecamp javascript
+    - exercise in class
+
+wk03
+  css
+    - clone responsive loginFB page 

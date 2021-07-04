@@ -14,3 +14,5 @@ wk02
 wk03
   css
     - clone responsive loginFB page 
+  js 
+    - exercise freecodecamp javascript

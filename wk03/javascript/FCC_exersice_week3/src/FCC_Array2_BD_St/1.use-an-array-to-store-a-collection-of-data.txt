@@ -1,0 +1,4 @@
+let yourArray = [
+  'Earth', 29, 'Bangkok', true, 1
+
+]; // Change this line

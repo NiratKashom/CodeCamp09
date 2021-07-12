@@ -1,0 +1,197 @@
+# Content 
+- Profile Lookup
+- Generate Random Fractions with JavaScript
+- Generate Random Whole Numbers with JavaScript
+- Generate Random Whole Numbers within a Range
+- Use the parseInt Function
+- Use the parseInt Function with a Radix
+- Use the Conditional (Ternary) Operator
+- Use Multiple Conditional (Ternary) Operators
+- Use Recursion to Create a Countdown
+- Use Recursion to Create a Range of Numbers
+
+
+[1.Profile Lookup](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
+```js
+// Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUpProfile(name, prop) {
+  // Only change code below this line
+  for (let i = 0; i < contacts.length; i++) {
+    if (name === contacts[i].firstName) {
+      if (contacts[i].hasOwnProperty(prop)) {
+        return contacts[i][prop];
+      } else {
+        return 'No such property';
+      }
+    }
+  }
+  return 'No such contact';
+  // Only change code above this line
+}
+
+
+lookUpProfile("Akira", "likes");
+
+
+
+  
+  
+  
+  
+```  
+
+[2.Generate Random Fractions with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/generate-random-fractions-with-javascript)
+```js
+function randomFraction() {
+
+  // Only change code below this line
+  
+  return Math.random();
+
+  // Only change code above this line
+}  
+  
+  
+  
+```
+
+[3.Generate Random Whole Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/generate-random-whole-numbers-with-javascript)
+```js
+function randomWholeNum() {
+
+  // Only change code below this line
+  return Math.floor(Math.random() * 10);
+}  
+  
+  
+  
+```  
+
+[4.Generate Random Whole Numbers within a Range](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/generate-random-whole-numbers-within-a-range)
+```js
+function randomRange(myMin, myMax) {
+  // Only change code below this line
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  // Only change code above this line
+}  
+  
+  
+  
+```  
+
+[5.Use the parseInt Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-the-parseint-function)
+```js
+function convertToInteger(str) {
+  return parseInt(str)
+}
+
+convertToInteger("56");  
+  
+  
+  
+```  
+
+[6.Use the parseInt Function with a Radix](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-the-parseint-function-with-a-radix)
+```js
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+
+convertToInteger("10011");  
+  
+  
+  
+```  
+
+[7.Use the Conditional (Ternary) Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-the-conditional-ternary-operator)
+```js
+function checkEqual(a, b) {
+  return a === b ? 'Equal' : 'Not Equal';
+}
+
+checkEqual(1, 2);  
+  
+  
+  
+```  
+
+[8.Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
+```js
+function checkSign(num) {
+    return num === 0 ? "zero" 
+    : num > 0 ? "positive" 
+    : "negative";
+}
+
+checkSign(10);  
+  
+  
+  
+```  
+
+[9.Use Recursion to Create a Countdown](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-recursion-to-create-a-countdown)
+```js
+// Only change code below this line
+function countdown(n){
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countdown(n - 1);
+    countArray.unshift(n);
+    return countArray;
+  }
+}
+console.log(countdown(5))
+// Only change code above this line
+
+  
+  
+  
+  
+```  
+
+[10.Use Recursion to Create a Range of Numbers](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-recursion-to-create-a-range-of-numbers)
+```js
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum - startNum === 0) {
+    return [startNum];
+  } else {
+    const arrNum = rangeOfNumbers(startNum, endNum - 1);
+    arrNum.push(endNum);
+    return arrNum;
+  }
+};
+
+console.log(rangeOfNumbers(1, 5))  
+  
+  
+  
+```  

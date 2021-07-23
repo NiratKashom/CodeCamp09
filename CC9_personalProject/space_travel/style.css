@@ -130,7 +130,6 @@ option[class*="-orange"]:hover {
   color: var(--myOrangeHov);
 }
 
-
 input {
   color: var(--myBlack);
   background: var(--myWhite);
@@ -255,7 +254,6 @@ div.home-container div select {
   padding: 10px;
 }
 
-
 /* login form */
 .login-form {
   width: 534px;
@@ -365,12 +363,94 @@ div.home-container div select {
   padding: 20px;
   margin: 0 250px;
 }
+/* step progress bar */
 
-.schedule .booking-progressbar {
-
+.stepper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 950px;
 }
 
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
 
+/* line between step */
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid var(--myWhite50);
+  width: 100%;
+  top: 10px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid var(--myWhite50);
+  width: 100%;
+  top: 10px;
+  left: 50%;
+  z-index: 2;
+}
+
+.step-name {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: var(--myWhite50);
+}
+
+/* dot above name */
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid var(--myWhite50);
+  background: var(--myBlack);
+}
+
+/*active step */
+.stepper-item.active .step-counter,
+.stepper-item.active .step-name {
+  color: var(--myWhite);
+  border-color: var(--myWhite);
+  text-decoration: underline;
+}
+
+/*complete step*/
+.stepper-item.complete .step-name {
+  color: var(--myWhite);
+  text-decoration: none;
+}
+
+.stepper-item.complete .step-counter {
+  background: var(--myWhite);
+}
+
+.stepper-item.complete::after {
+  border-color: var(--myWhite);
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+
+/* filter bar */
 .schedule .schedule-filter {
   align-self: flex-start;
   font-size: 18px;
@@ -389,6 +469,7 @@ div.home-container div select {
   margin-right: 18px;
 }
 
+/* table */
 .schedule .schedule-table {
   width: 100%;
 }

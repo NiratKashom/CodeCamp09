@@ -21,34 +21,30 @@
       <li><a href="./login.html">LOG IN / REGISTER</a></li>
     </ul>
   </nav>
-  
 
-  <div class="schedule outline">
-      <!-- <ul class="booking-progressbar outline">
-        <li><a href="">selecet flight</a></li>
-        <li><a href="">room and service</a></li>
-        <li><a href="">confirmation</a></li>
-        <li><a href="">payment</a></li>
-      </ul> -->
-      <div class="stepper-wrapper">
-        <div class="stepper-item active">
-          <div class="step-counter"></div>
-          <div class="step-name">selecet flight</div>
-        </div>
-        <div class="stepper-item ">
-          <div class="step-counter"></div>
-          <div class="step-name">room and service</div>
-        </div>
-        <div class="stepper-item complete">
-          <div class="step-counter"></div>
-          <div class="step-name">confirmation</div>
-        </div>
-        <div class="stepper-item">
-          <div class="step-counter"></div>
-          <div class="step-name">payment</div>
-        </div>
+
+  <div class="schedule">
+    <!-- stepper progress bar -->
+    <div class="stepper-wrapper">
+      <div class="stepper-item active">
+        <div class="step-counter"></div>
+        <div class="step-name">selecet flight</div>
       </div>
-    <div class="outline schedule-filter">
+      <div class="stepper-item">
+        <div class="step-counter"></div>
+        <div class="step-name">room and service</div>
+      </div>
+      <div class="stepper-item">
+        <div class="step-counter"></div>
+        <div class="step-name">confirmation</div>
+      </div>
+      <div class="stepper-item">
+        <div class="step-counter"></div>
+        <div class="step-name">payment</div>
+      </div>
+    </div>
+    <!-- filter bar -->
+    <div class="schedule-filter">
       <label for="">destination :</label>
       <select>
         <option value="0">Choose</option>
@@ -59,11 +55,99 @@
       <label for="">departure :</label>
       <input type="date">
     </div>
-    <div class="outline schedule-table">
-      <div class="container"></div>
-      <div class="container"></div>
-      <div class="container"></div>
-      <div class="container"></div>
+    <!-- table -->
+    <div class=" schedule-table">
+      <div class="container row " onclick="location = './roomAndService.html'">
+        <div class="departure-date ">
+          <p> <span>1</span><br> january <br> 2022</p>
+        </div>
+        <div class=" start-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow"> --> </div>
+        <div class=" target-dest">
+          <p>day 1<br> <span>mars</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow">--></div>
+        <div class=" return-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class="return-date ">
+          <p> <span>20</span><br> january <br> 2022</p>
+        </div>
+        <div class=" container price-tag">
+          <p>9999<span>&#3647;</span></p>
+        </div>
+      </div>
+      <div class="container row " onclick="location = './roomAndService.html'">
+        <div class="departure-date ">
+          <p> <span>1</span><br> january <br> 2022</p>
+        </div>
+        <div class=" start-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow"> --> </div>
+        <div class=" target-dest">
+          <p>day 1<br> <span>mars</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow">--></div>
+        <div class=" return-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class="return-date ">
+          <p> <span>20</span><br> january <br> 2022</p>
+        </div>
+        <div class=" container price-tag">
+          <p>9999<span>&#3647;</span></p>
+        </div>
+      </div>
+      <div class="container row " onclick="location = './roomAndService.html'">
+        <div class="departure-date ">
+          <p> <span>1</span><br> january <br> 2022</p>
+        </div>
+        <div class=" start-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow"> --> </div>
+        <div class=" target-dest">
+          <p>day 1<br> <span>mars</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow">--></div>
+        <div class=" return-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class="return-date ">
+          <p> <span>20</span><br> january <br> 2022</p>
+        </div>
+        <div class=" container price-tag">
+          <p>9999<span>&#3647;</span></p>
+        </div>
+      </div>
+      <div class="container row " onclick="location = './roomAndService.html'">
+        <div class="departure-date ">
+          <p> <span>1</span><br> january <br> 2022</p>
+        </div>
+        <div class=" start-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow"> --> </div>
+        <div class=" target-dest">
+          <p>day 1<br> <span>mars</span> <br> 1 january 2022</p>
+        </div>
+        <div class=" arrow">--></div>
+        <div class=" return-dest">
+          <p>day 1<br> <span>earth</span> <br> 1 january 2022</p>
+        </div>
+        <div class="return-date ">
+          <p> <span>20</span><br> january <br> 2022</p>
+        </div>
+        <div class=" container price-tag">
+          <p>9999<span>&#3647;</span></p>
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 

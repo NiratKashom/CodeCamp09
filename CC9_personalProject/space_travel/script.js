@@ -9,3 +9,5 @@
 //   );
 // });
 
+// const listArrow = document.querySelectorAll('.schedule .schedule-table .row .arrow')
+// console.log(listArrow[1])

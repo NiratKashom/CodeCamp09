@@ -178,6 +178,38 @@ select:focus {
   padding: 60px;
 }
 
+.container-w-head {
+  background: radial-gradient(
+    163.23% 243.53% at 1.12% 14.1%,
+    rgba(137, 153, 194, 0.35) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 60px;
+}
+
+.head-container {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    163.23% 243.53% at 1.12% 14.1%,
+    rgba(137, 153, 194, 0.35) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  backdrop-filter: blur(14px);
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+}
+
+.head-container h1 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -469,12 +501,87 @@ div.home-container div select {
   margin-right: 18px;
 }
 
-/* table */
+/*schedule table */
 .schedule .schedule-table {
   width: 100%;
 }
 
-.schedule .schedule-table div {
-  height: 150px;
+/*each row */
+.schedule .schedule-table .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
   margin-bottom: 20px;
+  padding: 0 0 0 49px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.schedule .schedule-table .row:hover {
+  background: radial-gradient(
+    163.23% 243.53% at 1.12% 14.1%,
+    #242833 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.schedule .schedule-table .row .price-tag {
+  height: 100%;
+  font-size: 48px;
+}
+
+.schedule .schedule-table .row .price-tag p,
+.schedule .schedule-table .row .price-tag span {
+  line-height: 50%;
+  font-size: 48px;
+}
+
+.schedule .schedule-table .row .departure-date,
+.schedule .schedule-table .row .return-date,
+.schedule .schedule-table .row .start-dest,
+.schedule .schedule-table .row .target-dest,
+.schedule .schedule-table .row .return-dest {
+  text-align: center;
+}
+
+.schedule .schedule-table .row .departure-date p,
+.schedule .schedule-table .row .return-date p {
+  font-size: 24px;
+}
+.schedule .schedule-table .row .departure-date span,
+.schedule .schedule-table .row .return-date span {
+  font-size: 48px;
+}
+
+.schedule .schedule-table .row .start-dest span,
+.schedule .schedule-table .row .target-dest span,
+.schedule .schedule-table .row .return-dest span {
+  font-size: 36px;
+}
+
+.schedule .schedule-table .row .arrow {
+  font-size: 48px;
+  color: var(--myBlue);
+}
+
+/* room and service page */
+.main-section {
+  outline: 1px dashed red;
+  display: flex;
+  width: 100%;
+}
+
+.main-section .left-section {
+  flex: 3;
+}
+
+.main-section .left-section .room-section {
+  margin-bottom: 22px;
+}
+
+.main-section .summary-section {
+  margin-left: 22px;
+  flex: 1;
 }
